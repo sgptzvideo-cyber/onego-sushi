@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Онего Суши — доставка суши по Петрозаводску</title>
+<meta name="description" content="Свежие суши с доставкой во все районы Петрозаводска. Только доставка, только свежее.">
+<style>
+:root{--ink:#14110f;--paper:#f6efe4;--red:#d62f2f;--green:#2f6b4f;--card:#fffaf1;--line:#e4d8c4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.55}
+h1,h2,h3,.btn,nav,.price{font-family:'Trebuchet MS',Arial,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:rgba(246,239,228,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:20px;letter-spacing:.5px;font-family:'Trebuchet MS',Arial,sans-serif}
+.logo span{color:var(--red)}
+nav a{margin-left:22px;color:var(--ink);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:14px 28px;border-radius:40px;text-decoration:none;font-weight:700;border:0;cursor:pointer;font-size:16px;transition:.2s}
+.btn:hover{background:#b82222;transform:translateY(-2px)}
+.hero{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;padding:80px 20px}
+.hero h1{font-size:clamp(34px,5.5vw,60px);line-height:1.08;margin-bottom:18px}
+.hero h1 em{color:var(--red);font-style:normal}
+.hero p{font-size:19px;opacity:.85;margin-bottom:30px;max-width:480px}
+.sun{width:min(340px,80vw);aspect-ratio:1;border-radius:50%;background:var(--red);margin:auto;position:relative;box-shadow:0 0 0 18px rgba(214,47,47,.2),0 0 0 40px rgba(214,47,47,.1)}
+.sun::after{content:"鮮";position:absolute;inset:0;display:grid;place-items:center;font-size:150px;color:var(--paper);font-family:serif}
+section{padding:80px 0}
+h2{font-size:clamp(28px,4vw,40px);margin-bottom:8px}
+.sub{opacity:.7;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;transition:.25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(0,0,0,.1)}
+.pic{height:110px;border-radius:12px;margin-bottom:16px;display:grid;place-items:center;font-size:54px;font-family:serif;color:#fff}
+.c1{background:#d62f2f}.c2{background:#e08a2c}.c3{background:#2f6b4f}.c4{background:#3b4a6b}.c5{background:#8a3b5c}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{font-size:14px;opacity:.75;flex:1}
+.price{margin-top:14px;font-weight:800;font-size:20px;color:var(--red)}
+.why{background:var(--green);color:var(--paper)}
+.why .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px}
+.why b{font-size:44px;display:block;font-family:'Trebuchet MS',Arial,sans-serif}
+.districts{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.districts span{background:var(--card);border:1px solid var(--line);padding:9px 18px;border-radius:30px;font-size:15px}
+form{display:grid;gap:14px;max-width:520px}
+input,select{padding:15px 18px;border-radius:14px;border:1px solid var(--line);background:var(--card);font-size:16px;font-family:inherit}
+.ok{display:none;background:var(--green);color:#fff;padding:16px;border-radius:14px}
+footer{background:var(--ink);color:var(--paper);padding:40px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr;padding:50px 20px}nav a:not(.btn){display:none}.sun::after{font-size:110px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="logo">ОНЕГО<span>.</span>СУШИ</div>
+<nav><a href="#menu">Меню</a><a href="#why">Почему мы</a><a href="#delivery">Доставка</a><a class="btn" href="#order" style="padding:9px 20px;color:#fff;margin-left:22px">Заказать</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+<div>
+<h1>Самые свежие суши — <em>только у нас</em></h1>
+<p>Только доставка. Готовим после вашего заказа и привозим в любой район Петрозаводска.</p>
+<a class="btn" href="#order">Заказать суши</a>
+</div>
+<div class="sun" aria-hidden="true"></div>
+</div></div>
+
+<section id="menu"><div class="wrap">
+<h2>Наше меню</h2>
+<p class="sub">Пять фирменных позиций. Состав и цены уточним к запуску.</p>
+<div class="grid">
+<div class="card"><div class="pic c1">鮭</div><h3>Нигири с лососем</h3><p>Нежный лосось на подушке из риса.</p><div class="price">от 000 ₽</div></div>
+<div class="card"><div class="pic c2">巻</div><h3>Ролл Филадельфия</h3><p>Лосось, сливочный сыр, огурец.</p><div class="price">от 000 ₽</div></div>
+<div class="card"><div class="pic c3">緑</div><h3>Ролл с авокадо</h3><p>Авокадо, огурец, кунжут. Лёгкий и вегетарианский.</p><div class="price">от 000 ₽</div></div>
+<div class="card"><div class="pic c4">焼</div><h3>Запечённый ролл</h3><p>Горячий, с сырной шапкой и угрём.</p><div class="price">от 000 ₽</div></div>
+<div class="card"><div class="pic c5">盛</div><h3>Сет «Онего»</h3><p>Ассорти из всех позиций для компании.</p><div class="price">от 000 ₽</div></div>
+</div></div></section>
+
+<section class="why" id="why"><div class="wrap">
+<h2>Почему мы</h2><p class="sub" style="opacity:.8">Просто и честно.</p>
+<div class="grid">
+<div><b>100%</b>свежие продукты каждый день</div>
+<div><b>Все районы</b>Петрозаводска без исключений</div>
+<div><b>После заказа</b>готовим только для вас</div>
+</div></div></section>
+
+<section id="delivery"><div class="wrap">
+<h2>Доставляем по всему Петрозаводску</h2>
+<p class="sub">Условия и время доставки уточним к запуску.</p>
+<div class="districts"><span>Центр</span><span>Древлянка</span><span>Кукковка</span><span>Перевалка</span><span>Голиковка</span><span>Ключевая</span><span>Первомайский</span><span>Сулажгора</span><span>Октябрьский</span></div>
+</div></section>
+
+<section id="order" style="background:#efe5d3"><div class="wrap">
+<h2>Оформить заказ</h2><p class="sub">Оставьте контакты, мы перезвоним и уточним заказ.</p>
+<form onsubmit="event.preventDefault();this.style.display='none';document.getElementById('ok').style.display='block'">
+<input required placeholder="Ваше имя">
+<input required type="tel" placeholder="Телефон">
+<select><option>Нигири с лососем</option><option>Ролл Филадельфия</option><option>Ролл с авокадо</option><option>Запечённый ролл</option><option>Сет «Онего»</option></select>
+<input placeholder="Адрес доставки">
+<button class="btn" type="submit">Отправить заказ</button>
+</form>
+<div class="ok" id="ok">Спасибо! Мы скоро свяжемся с вами.</div>
+</div></section>
+
+<footer><div class="wrap"><div>Онего Суши · Петрозаводск</div><div>Телефон: +7 (000) 000-00-00</div><div>Только доставка</div></div></footer>
+</body>
+</html>
